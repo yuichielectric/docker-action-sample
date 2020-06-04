@@ -1,0 +1,12 @@
+name: 'Docker Action sample'
+author: 'yuichielectric'
+description: : 'Sample Docker Action'
+inputs:
+  secret:
+    description: Secret
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    SECRET: ${{ inputs.secret }}
