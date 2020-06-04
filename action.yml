@@ -9,6 +9,6 @@ runs:
   using: docker
   image: Dockerfile
   args:
-    - --build-arg SECRET=${{ inputs.secret }}
+    - -build-arg SECRET=${{ inputs.secret }}
   env:
     SECRET: ${{ inputs.secret }}
